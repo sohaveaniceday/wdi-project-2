@@ -1,8 +1,12 @@
 # General Assembly SEI Project 2: Reactathon App
 
+<<<<<<< HEAD
 test
 
 [Portfolio Link](https://times-machine.herokuapp.com/)
+=======
+[Portfolio Link](https://times-machine.herokuapp.com/) - API keys need updating.
+>>>>>>> 5255768d12b5cb7ac21d1e7476dfe2647febb09a
 
 <!-- [GitHub Repo](https://github.com/sohaveaniceday/wdi-project-2) -->
 
