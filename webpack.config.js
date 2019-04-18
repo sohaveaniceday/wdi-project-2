@@ -31,6 +31,6 @@ module.exports = {
       filename: 'index.html',
       inject: 'body'
     }),
-    new DotEnv()
+    process.env.NODE_ENV === 'production' ? new webpack.EnvironmentPlugin({ ...process.env }) : new DotEnv()
   ]
 }
