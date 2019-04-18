@@ -1,6 +1,6 @@
 # General Assembly SEI Project 2: Reactathon App
 
-[Portfolio Link](https://times-machine.herokuapp.com/)
+[Portfolio Link](https://wdi-times-machine.herokuapp.com/)
 
 <!-- [GitHub Repo](https://github.com/sohaveaniceday/wdi-project-2) -->
 
