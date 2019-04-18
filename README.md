@@ -1,7 +1,5 @@
 # General Assembly SEI Project 2: Reactathon App
 
-[Portfolio Link](https://times-machine.herokuapp.com/)
-=======
 [Portfolio Link](https://times-machine.herokuapp.com/) - API keys need updating.
 
 <!-- [GitHub Repo](https://github.com/sohaveaniceday/wdi-project-2) -->
