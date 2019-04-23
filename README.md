@@ -2,7 +2,7 @@
 
 [Portfolio Link](https://wdi-times-machine.herokuapp.com/)
 
-<!-- [GitHub Repo](https://github.com/sohaveaniceday/wdi-project-2) -->
+The Times Machine was my first project using React and interacting with a public API. Having the extremely tight deadline of 48 hours also gave me a good experience in teamwork sprints. 
 
 ## Brief
 
