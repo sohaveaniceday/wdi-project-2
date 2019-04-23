@@ -1,4 +1,4 @@
-# General Assembly SEI Project 2: Reactathon App
+# General Assembly WDI Project 2: Reactathon App
 
 [Portfolio Link](https://wdi-times-machine.herokuapp.com/)
 
