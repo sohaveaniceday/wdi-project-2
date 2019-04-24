@@ -113,13 +113,11 @@ The below demonstrates the use of ES6's spreading function to change state witho
 ```
 ___
 
-### Challenges
+## Wins and Blockers
 
 Whilst the NYT Archive has a very impressive volume of articles within its API, it also has very little documentation. This limitation meant we had to become more creative with our problem solving ability to handle it's enormous metadata (with some glaring inconsistencies).
 
 With the time constraint, we also had to streamline our way of working to allow for the best possible output in the time given. This meant focusing on the key MVP elements of the app, rather than focusing on superfluous features.
-
-### Wins
 
 Creating our app strengthened our knowledge of React and also gave us an opportunity to experiment and play around with ideas. Our top wins include:
 
