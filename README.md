@@ -4,6 +4,8 @@
 
 The Times Machine was my first project using React and interacting with a public API. Having the extremely tight deadline of 48 hours also gave me a good experience in teamwork sprints. 
 
+---
+
 ## Brief
 
 In teams of 3 we had to render an app that retrieves data from a public API in an interesting and engaging manner. We had just under 48 hours to achieve this goal, making it extremely time sensitive.
