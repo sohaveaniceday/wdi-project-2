@@ -23,6 +23,8 @@ In teams of 3 we had to render an app that retrieves data from a public API in a
 * Git
 * GitHub
 
+---
+
 ## Approach Taken
 
 The Times Machine is a tech news app which leverages the vast New York Times Archive API. Our app allows readers to step back in time and find tech stories from the past. Users can search for technology and science stories dating back to the 1920s.
