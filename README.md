@@ -68,6 +68,11 @@ The creation of our app began with testing out the NYT Archive API. After experi
 5. Creating a search function that successfully navigates the NYT Archive's eclectic metadata. Due to the sheer amount of data, our main goal was to successfully filter for tech and science-related articles.
 6. To style our page, we used a combination of Bulma, Sass and an Animations NPM package.
 
+### Division of work
+
+Working in a team for the first time on the course meant we had to work together to ensure we were able to deliver the product on time. This involved an extensive discussion at the beginning of the project to make sure everybody was onboard with the concept and understood the tasks involved. We then pair coded a lot of the initial set up of the project, including initialising React and getting our components in place. From there we used Trello to divide up the work and to communicate when tasks had been completed. My contribution to the project included creating the webpack, formatting the results, implementing the search form and filtering of the results to display relevant content - a tough task considering the inconsistent metadata that came with the API. 
+
+
 
 #### Featured piece of code 1
 
@@ -135,3 +140,9 @@ If we had more time during Reactathon, essential future features we would like t
 * Creating social sharing buttons to give users an opportunity to interact better with the site. Also, adding images to results for both older and more recent stories (instead of just headlines).
 * Establishing more CSS animation and functionality on all pages.
 * Adding more information and instructions (either on pages or through a pop-up window) about the app and our intent.
+
+___
+
+## Key Learnings
+
+
