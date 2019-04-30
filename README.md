@@ -70,7 +70,7 @@ The creation of our app began with testing out the NYT Archive API. After experi
 
 ### Division of work
 
-Working in a team for the first time on the course meant we had to work together to ensure we were able to deliver the product on time. This involved an extensive discussion at the beginning of the project to make sure everybody was onboard with the concept and understood the tasks involved. We then pair coded a lot of the initial set up of the project, including initialising React and getting our components in place. From there we used Trello to divide up the work and to communicate when tasks had been completed. My contribution to the project included creating the webpack, formatting the results, implementing the search form and filtering of the results to display relevant content - a tough task considering the inconsistent metadata that came with the API. 
+Working in a team for the first time on the course meant we had to work together to ensure we were able to deliver the product on time. This involved an extensive discussion at the beginning of the project to make sure everybody was onboard with the concept and understood the tasks involved. We then pair coded a lot of the initial set up of the project, including initialising React and getting our components in place, so we all knew how the project fitted together. From there onwards we used Trello to divide up the work and to communicate when tasks had been completed. My contribution to the project included creating the webpack, formatting the results, implementing the search form and filtering of the results to display relevant content - a tough task considering the inconsistent metadata that came with the API. 
 
 
 
@@ -145,4 +145,4 @@ ___
 
 ## Key Learnings
 
-
+Being the first project working as a group, I learnt a lot about collaboration and working with Git to avoid conflicts. Communication was key to ensure everyone knew what they were working on and that no one was doubling up on unnecessary work. But once we got going, I found it to be extremely productive and an amazing way to work. I also learnt that public APIs are not always to be trusted when it came to the consistancy of metadata. Great care is required when working with a database that you do not have direct control of.
