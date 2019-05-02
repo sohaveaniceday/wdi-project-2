@@ -1,6 +1,6 @@
 # General Assembly WDI Project 2: Reactathon App
 
-[Portfolio Link](https://wdi-times-machine.herokuapp.com/)
+[Deployed Project Link](https://wdi-times-machine.herokuapp.com/)
 
 The Times Machine was my first project using React and interacting with a public API. Having the extremely tight deadline of 48 hours also gave me a good experience in teamwork sprints. 
 
