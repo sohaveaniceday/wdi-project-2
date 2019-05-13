@@ -26,7 +26,6 @@ class Randomizer extends React.Component {
     const randMonth = Math.ceil(Math.random() * 12)
     const randYear = Math.floor(Math.random() * (2016 - 1920) + 1920)
     this.setState({ data: { month: randMonth, year: randYear }})
-    console.log(this.state.data.year, this.state.data.month, key)
   }
 
   handleClick(e) {
@@ -34,7 +33,6 @@ class Randomizer extends React.Component {
     // const randYear = Math.floor(Math.random() * (2017 - 1920) + 1920)
     this.setState({ loading: 'true' })
     e.preventDefault()
-    console.log(this.state.data.year, this.state.data.month, key)
     axios.get(`https://api.nytimes.com/svc/archive/v1/${this.state.data.year}/${this.state.data.month}.json?api-key=${key}`)
       .then(res => {
         const stories = res.data.response.docs.filter(story => story.keywords.find(item => {
@@ -43,9 +41,7 @@ class Randomizer extends React.Component {
         // stories = stories.filter(story => story.multimedia.length > 0)
         this.setState({ stories, loading: 'false' })
       })
-      .catch(err => console.log(err))
       .catch(err => this.setState({ errors: err.response.data.errors }))
-    console.log(this.state)
   }
 
 
@@ -64,6 +60,7 @@ class Randomizer extends React.Component {
             <h1 className="title loading">
             Calibrating...
             </h1>
+            <p>(May take up to 30 seconds)</p>
           </div>
         </div>
       </section>

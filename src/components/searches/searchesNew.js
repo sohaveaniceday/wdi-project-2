@@ -29,16 +29,12 @@ class SearchesNew extends React.Component {
     const data = {...this.state.data, [name]: value}
     const errors = {...this.state.errors, [name]: ''}
     this.setState({ data, errors })
-    console.log(this.state)
-    // const data = {...this.state.data, [name]: value }
-    // this.setState({ data, errors })
   }
 
   handleSubmit(e) {
     {this.state.data.year && this.state.data.month &&
     this.setState({ loading: 'true' })
     e.preventDefault()
-    console.log(this.state.data.year, this.state.data.month, key)
     axios.get(`https://api.nytimes.com/svc/archive/v1/${this.state.data.year}/${this.state.data.month}.json?api-key=${key}`)
       .then(res => {
         const stories = res.data.response.docs.filter(story => story.keywords.find(item => {
@@ -46,9 +42,7 @@ class SearchesNew extends React.Component {
         }) || (story.section_name !== null && story.section_name.includes('Technology')))
         this.setState({ stories, loading: 'false' })
       })
-      .catch(err => console.log(err))
       .catch(err => this.setState({ errors: err.response.data.errors }))
-    console.log(this.state)
     }
   }
 
@@ -67,6 +61,7 @@ class SearchesNew extends React.Component {
             <h1 className="title loading">
             Calibrating...
             </h1>
+            <p>(May take up to 30 seconds)</p>
           </div>
         </div>
       </section>
@@ -122,6 +117,3 @@ class SearchesNew extends React.Component {
 
 
 export default SearchesNew
-
-// <img src={'https://www.nytimes.com/' + story.multimedia[0].url} />
-// {story.multimedia && <img src={'https://www.nytimes.com/' + story.multimedia[0].url} />}
