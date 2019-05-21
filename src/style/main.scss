@@ -1,0 +1,33 @@
+@import "intro";
+@import "navbar";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 24px;
+  font-family: 'Source Serif Pro', serif;
+  color: rgb(255,255,255);
+}
+
+.button {
+  margin-top: 30px;
+}
+
+.is-black-background {
+  height: 100vh;
+  font-size: 18px;
+  color: rgb(0,0,0);
+  background-color: rgb(255,255,255);
+}
+
+.loading {
+  color: rgb(255,255,255);
+}
+
+.results-title {
+  padding-bottom: 75px;
+  color: rgb(0,0,0);
+}

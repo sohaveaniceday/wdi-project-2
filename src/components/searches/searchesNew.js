@@ -1,11 +1,9 @@
 import React from 'react'
 import axios from 'axios'
-import {Animated} from 'react-animated-css'
-
-const key = process.env.ACCESS_TOKEN_KEY
-
+import { Animated } from 'react-animated-css'
 import SearchesForm from './searchesForm'
 
+const key = process.env.ACCESS_TOKEN_KEY
 const initialState = { data: {}, errors: {}, loading: 'waiting' }
 
 class SearchesNew extends React.Component {
@@ -54,44 +52,47 @@ class SearchesNew extends React.Component {
 
     if (this.state.loading === 'true') {
       button = null
-      content =
-      <section className="hero is-fullheight">
-        <div className="hero-body">
-          <div className="container">
-            <h1 className="title loading">
+      content = (
+        <section className="hero is-fullheight">
+          <div className="hero-body">
+            <div className="container">
+              <h1 className="title loading">
             Calibrating...
-            </h1>
-            <p>(May take up to 30 seconds)</p>
+              </h1>
+              <p>(May take up to 30 seconds)</p>
+            </div>
+          </div>
+        </section>
+      )
+    } else if ( this.state.loading === 'waiting' || this.state.loaderror ) {
+      content = (
+        <div className="section">
+          <div className="container">
+            <SearchesForm
+              handleChange={this.handleChange}
+              handleSubmit={this.handleSubmit}
+              data={this.state.data}
+              errors={this.state.errors}
+            />
           </div>
         </div>
-      </section>
-    } else if ( this.state.loading === 'waiting' || this.state.loaderror ) {
-      content =
-      <div className="section">
-        <div className="container">
-          <SearchesForm
-            handleChange={this.handleChange}
-            handleSubmit={this.handleSubmit}
-            data={this.state.data}
-            errors={this.state.errors}
-          />
+      )} else {
+      button = (
+        <div className="container has-text-centered">
+          <div className="section">
+            <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+              <button onClick={this.handleReset} className="button is-black has-text-white">Search Again?</button>
+            </Animated>
+          </div>
+          <div className="section is-marginless is-paddingless">
+            <h1 className="title is-4 results-title">Displaying Results for {months[this.state.data.month]} {this.state.data.year}</h1>
+          </div>
         </div>
-      </div>
-    } else {
-      button =
-      <div className="container has-text-centered">
-        <div className="section">
-          <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-            <button onClick={this.handleReset} className="button is-black has-text-white">Search Again?</button></Animated>
-        </div>
-        <div className="section is-marginless is-paddingless">
-          <h1 className="title is-4 results-title">Displaying Results for {months[this.state.data.month]} {this.state.data.year}</h1>
-        </div>
-      </div>
+      )
       content =
       this.state.stories.slice(0,20).map((story, i) => {
         return (
-          <div  className="container" key={i}>
+          <div className="container" key={i}>
             <div className="section box">
               <h2 className="title is-5">{story.headline.main}</h2>
               <p>{story.snippet}</p>
@@ -107,8 +108,7 @@ class SearchesNew extends React.Component {
         {button}
         {content}
         <div className="container">
-          <div className="section">
-          </div>
+          <div className="section" />
         </div>
       </main>
     )

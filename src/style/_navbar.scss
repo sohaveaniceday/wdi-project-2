@@ -1,0 +1,26 @@
+.navbar {
+  background: rgb(35,35,35);
+  position: fixed;
+  width: 100%;
+  .navbar-item {
+    color: rgb(255,255,255);
+    padding: 0 30px;
+  }
+}
+
+.is-active {
+  .navbar-item {
+    color: rgb(0,0,0);
+  }
+}
+
+.navbar-burger {
+  color: rgb(255,255,255);
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .navbar-brand:hover {
+    background: rgb(255,255,255);
+  }
+}
